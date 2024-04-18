@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: springCloud-sentinel
+  profiles:
+    # 环境配置
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        # 服务注册地址
+        server-addr: 116.198.207.0:8848
+        # 本服务分组
+        group: public
+        # 服务namespace
+        namespace: public
+      config:
+        # 配置中心地址
+        server-addr: 116.198.207.0:8848
+        # 配置文件格式
+        group: public
+        file-extension: yml
+        namespace: public
+
+server:
+  port: 9562
+a: 1
